@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import react, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import Wrapper from '../src/Nav/Wrapper';
+import Wrapper from '../Components/Nav/Wrapper';
 import { Theme, GlobalStyles } from '../styles/globalStyles';
 
 

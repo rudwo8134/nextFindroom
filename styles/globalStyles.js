@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const Selection = process.env.Theme;
-console.log(process.env.Theme);
 
 export const Theme = {
   colors: {

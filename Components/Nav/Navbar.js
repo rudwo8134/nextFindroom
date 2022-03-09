@@ -14,10 +14,11 @@ const Navbar = () => {
     { link: t('common:navigation.customerService'), href: '/customerService' },
   ];
   const [offset, setOffset] = useState(0);
-  const [screenNavHeight] = useState(window.innerHeight * 0.1);
+  const [screenNavHeight, setscreenNavHeight] = useState(0);
   const [covered, setCovered] = useState(false);
 
   useEffect(() => {
+    setscreenNavHeight(window?.innerHeight * 0.1);
     if (offset > screenNavHeight) {
       setCovered(true);
     } else {
@@ -57,7 +58,7 @@ const Navbar = () => {
         <NavUserContainer>
           <BiUserCircle />
           <h3>
-            <b>경재</b>님. 환영합니다.
+            <b>Eric</b>님. 환영합니다.
           </h3>
         </NavUserContainer>
       </NavContainer>
@@ -66,12 +67,14 @@ const Navbar = () => {
 };
 
 const NavWrapper = styled.nav`
+  z-index: 10;
   position: fixed;
-  top:0;
+  top: 0;
   width: 100vw;
   height: 10vh;
   margin: 0 auto;
-  background-color: ${({ theme, covered }) => covered ? theme.colors.primary : theme.colors.white};
+  background-color: ${({ theme, covered }) =>
+    covered ? theme.colors.primary : theme.colors.white};
 `;
 const NavContainer = styled.div`
   max-width: 1300px;
@@ -86,7 +89,7 @@ const NavContainer = styled.div`
 const NavName = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.xl};
   flex: 1;
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.black};
 `;
 const NavLinkContainer = styled.div`
   display: flex;
