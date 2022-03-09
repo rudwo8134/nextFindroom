@@ -1,0 +1,9 @@
+{
+  "companyName": "Room First",
+  "navigation": {
+    "intro": "Intro",
+    "findroom": "Find Room",
+    "postroom": "Post Room",
+    "customerService": "Customer Service"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "companyName": "Room First",
+  "navigation": {
+    "intro": "소개",
+    "findroom": "방 찾기",
+    "postroom": "방 올리기",
+    "customerService": "고객센터"
+  }
+}
